@@ -24,7 +24,7 @@
 <main>
 
 <!--menu as an image to be easily updated--><!--a few photos from the current menu-->
-    <section class="info-container" id="menu-section">
+    <div class="info-container" id="menu-section">
         <table>
             <tr>
                 <td>
@@ -37,23 +37,44 @@
                 </td>
             </tr>
         </table>
-    </section>
+    </div>
 
-<!--Recipe request form-->    
-    <section id="recipe-request-form">
+<!--Recipe request form   
+    <div id="recipe-request-form">
+    <form>
         <h3>Request a Recipe</h3>
-        <lable>*&nbsp;First Name:</lable> <input type="text" maxlength="25" placeholder="Required Field" required>
+        <lable for="first-name">*&nbsp;First Name:</lable> 
+        <input id="first-name" type="text" maxlength="25" placeholder="Required Field" required>
         <br><br>
-        <lable>Last Name:</lable> <input type="text" maxlength="25">
+        <lable for="last-name"> Last Name:</lable> 
+        <input id="last-name" type="text" maxlength="25">
         <br><br>
-        <label>*&nbsp;Your Email:</lable> <input type="text" maxlength="100" placeholder="Required Field" required>
+        <label for="customer-email">*&nbsp;Your Email:</lable> 
+        <input id="email" type="text" maxlength="100" placeholder="Required Field" required>
         <br><br>
-        <label>*&nbsp;What recipe would you like us to send to you?</lable> <br> <textarea rows=10 cols=70 maxlength="250" required> </textarea> <br>
+        <label for="recipe-request-field">*&nbsp;What recipe would you like us to send to you?</lable> <br> 
+        <textarea id="recipe-request-field" rows=10 cols=70 maxlength="250" required> </textarea> <br>
         <button class="btn btn-primary">submit</button>
     </form>
-    </section>
+    </div>
+--> 
 
+    <form>
+        <label for="fname">*&nbsp;First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
 
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="customer-email">*&nbsp;Email:</label><br>
+        <input type="text" id="customer-email" name="customer-email" required><br>
+
+        <label for="recipe-request-field">*&nbsp;Request a recipe here.</label><br>
+        <input id="recipe-request-field" name="recipe-request-field"  size="50" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
 
 </body>
 </html>
