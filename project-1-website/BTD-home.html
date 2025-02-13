@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTD | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/sitewide.css">
 </head>
 
-<!--home page-->
-
 <body>
+<!--Navagation Links-->
+<nav class="navbar navbar-expand-lg" id="nav_bar">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="BTD-home.html"><img alt="missing-img" src="img/logo.jpg" height=100 width=100 id="BTDlogo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="menupage.html">View Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="aboutpage.html">Our Stories</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
 
-<!--Navagation links-->
-    <header>
-        <a href="BTD-home.html" id="logo-img">
-            <img src="img/logo.jpg" 
-            alt="Go To Home" 
-            height="75" 
-            width="75"></a>
-        <a href="menupage.html" class="nav_button">View Menu</a>
-        <a href="aboutpage.html" class="nav_button">Learn About Our Chefs</a>
-    </header>
 
 <!--heading-->
     <main>
@@ -41,7 +50,7 @@
             <table>
                 <tr>
                     <td>
-                        <img alt="missing photo" src="img/storefront.jpg" width="250" height="400">
+                        <img alt="missing photo" src="img/storefront.jpg" width="250" height="400" class="homepage-photos">
                     </td>
                     <td>
                         <h4>Storefront</h4>
@@ -57,6 +66,7 @@
                         Located conveniently just off Pellissippi Parkway in Hardin Valley.<br>
                         Take advantage of exclusive in store offers.<br>
                         </p>
+                        <div class="info-box">
                         <h5>Store Hours (Winter Hours)</h5>
                         <ul>
                             <li>Monday:     Closed</li>
@@ -69,6 +79,7 @@
                             <li>Wednesday:  8a-6p</li>
                             <li>Sunday:     10a-4p</li>
                         </ul>
+                    </div>
                     </td>
                 </tr>
             </table>
@@ -123,7 +134,7 @@
                         </div>
                     </td>
                     <td>
-                        <img alt="missing-image" src="img/market.png" width="350" height="375">
+                        <img alt="missing-image" src="img/market.png" width="350" height="375" class="homepage-photos">
                     </td>
                 </tr>
             </table>
