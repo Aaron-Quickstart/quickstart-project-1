@@ -16,10 +16,10 @@ Formspree
 
 
 ##GitHub Code Repository
-add github repository
+https://github.com/Aaron-Quickstart/quickstart-project-1
 
 ##GutHub Website URL
-add github URL
+https://aaron-quickstart.github.io/quickstart-project-1/project-1-website/BTD-home.html
 
 #Future Improvements
 
